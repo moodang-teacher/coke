@@ -112,8 +112,10 @@ nav a {
 }
 
 .drink-list li {
-  width: 42.7rem;
-  height: 42.7rem;
+  flex: 1 1 420px;
+  aspect-ratio: 1/1;
+  /* width: 42.7rem; */
+  /* height: 42.7rem; */
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 30px;
 
@@ -241,24 +243,24 @@ footer {
 }
 
 @media screen and (max-width: 1640px) {
-  .drink-list li {
+  /* .drink-list li {
     width: 40rem;
     height: 40rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 1540px) {
-  .drink-list li {
+  /* .drink-list li {
     width: 35rem;
     height: 35rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 1540px) {
-  .drink-list li {
+  /* .drink-list li {
     width: 35rem;
     height: 35rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 1450px) {
@@ -266,10 +268,10 @@ footer {
     gap: 3rem;
   }
 
-  .drink-list li {
+  /* .drink-list li {
     width: 30rem;
     height: 30rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 1400px) {
@@ -277,16 +279,16 @@ footer {
     flex-wrap: wrap;
   }
 
-  .drink-type li {
+  /* .drink-type li {
     gap: 2rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 1240px) {
-  .drink-list li {
+  /* .drink-list li {
     width: 25rem;
     height: 25rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 1024px) {
@@ -360,10 +362,10 @@ footer {
     gap: 2rem;
   }
 
-  .drink-list li {
+  /* .drink-list li {
     width: 26rem;
     height: 26rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 900px) {
@@ -379,7 +381,7 @@ footer {
   }
 
   .top-con figure img {
-    width: 12.5em;
+    width: 2.5em;
     height: 2rem;
     object-fit: contain;
   }
