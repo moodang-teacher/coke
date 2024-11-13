@@ -278,6 +278,7 @@ nav a {
 
 .swiper {
   border-radius: 30px;
+  overflow-x: hidden;
 }
 
 .swiper-con {
@@ -954,10 +955,6 @@ footer {
     /* width: 95.703125%; */
   }
 
-  :root {
-    /* font-size: 58%; */
-  }
-
   .gnb-wrap {
     display: none;
   }
@@ -977,6 +974,22 @@ footer {
 
   .navbar-collapse {
     flex-basis: inherit;
+  }
+
+  .gnb-wrap li {
+    display: none;
+  }
+
+  .lang {
+    display: none;
+  }
+
+  .shop {
+    display: none;
+  }
+
+  .btn-menu {
+    display: block;
   }
 
   .visual {
