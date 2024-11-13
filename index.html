@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coca-Cola Korea</title>
+    <link rel="icon" href="/img/favicon.webp" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -12,11 +14,23 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/style.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
     <script src="./script/jquery-3.7.1.min.js"></script>
     <script src="./script/script.js" defer></script>
   </head>
@@ -24,37 +38,42 @@
     <header>
       <div class="inner">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <figure class="logo">
-              <img src="./img/logo-white.png" alt="Coca-Cola Logo" />
+              <img src="./img/Coke.-white-logo.svg" alt="Coca-Cola Logo" />
             </figure>
           </a>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="gnb-wrap">
               <li class="gnb-list">
-                <a href="#brand">Brand</a>
+                <a href="brand.html">Brand</a>
               </li>
               <li class="nav-item">
-                <a href="#products">Products</a>
+                <a href="sub.html">Products</a>
               </li>
               <li class="nav-item">
-                <a href="#sustainability">Sustainability</a>
+                <a href="sustainbility.html">Sustainability</a>
               </li>
               <li class="nav-item">
-                <a href="#about">About Us</a>
+                <a href="brand-us.html">About Us</a>
               </li>
             </ul>
 
             <div class="btn-wrap">
-              <div class="lang">
-                <img src="./img/btn-lang.png" alt="Language" />
-              </div>
-              <div class="shop">
-                <img src="./img/btn-shop.png" alt="Shop" />
-              </div>
+              <a href="#">
+                <div class="lang">
+                  <img src="./img/btn-lang.png" alt="Language" />
+                </div>
+              </a>
+              <a href="#">
+                <div class="shop">
+                  <img src="./img/btn-shop.png" alt="Shop" />
+                </div>
+              </a>
             </div>
+
             <div class="btn-menu">
-              <img src="img/menu-bar.png" alt="Menu" />
+              <a href="#"><img src="img/menu-bar.png" alt="Menu" /></a>
             </div>
           </div>
         </nav>
@@ -133,7 +152,7 @@
                     <img src="./img/campaign-3.webp" alt="campaign3" />
                     <p>
                       코카콜라의 새로운 변신,<br />
-                      체리의 달콤함이 더해진 상쾌함!
+                      더해진 체리의 달콤함!
                     </p>
                   </div>
                   <div class="swiper-slide">
@@ -155,7 +174,7 @@
                     <img src="./img/campaign-3.webp" alt="campaign3" />
                     <p>
                       코카콜라의 새로운 변신,<br />
-                      체리의 달콤함이 더해진 상쾌함!
+                      더해진 체리의 달콤함!
                     </p>
                   </div>
                 </div>
@@ -194,9 +213,15 @@
                     원더풀 캠페인
                   </dt>
                   <dd>
-                    2020년부터 진행하고 있는 원더플(ONETHEPL)<br />
-                    캠페인은‘한 번(ONE) 더(THE) 사용되는 플라스틱(PL)’과<br />
-                    ‘원더풀(Wonderful)’이라는 중의적 의미를 가진 소비자<br />
+                    2020년부터 진행하고 있는 원더플(ONETHEPL)<br
+                      class="text-space"
+                    />
+                    캠페인은‘한 번(ONE) 더(THE) 사용되는 플라스틱(PL)’과<br
+                      class="text-space"
+                    />
+                    ‘원더풀(Wonderful)’이라는 중의적 의미를 가진 소비자<br
+                      class="text-space"
+                    />
                     동참형 자원순환 캠페인 •••
                   </dd>
                 </dl>
@@ -220,9 +245,17 @@
                     물 환원 프로젝트
                   </dt>
                   <dd>
-                    코카콜라는 제품 생산에 사용된 물이 투명하고<br />지속 가능한
-                    방식으로 자연에 돌아가도록 다양한<br />
-                    프로그램을 운영하고 있습니다. 특히, 물 부족 지역에서<br />
+                    코카콜라는 제품 생산에 사용된 물이 투명하고<br
+                      class="text-space"
+                      class="text-space"
+                    />지속 가능한 방식으로 자연에 돌아가도록 다양한<br
+                      class="text-space"
+                      class="text-space"
+                    />
+                    프로그램을 운영하고 있습니다. 특히, 물 부족 지역에서<br
+                      class="text-space"
+                      class="text-space"
+                    />
                     수질 개선과 물 공급 프로젝트를 통해 •••
                   </dd>
                 </dl>
@@ -246,10 +279,14 @@
                     환경을 위한 목표
                   </dt>
                   <dd>
-                    코카콜라는 에너지 효율성을 높이고, 재생 가능한<br />에너지를
-                    사용하며, 저탄소 기술을 도입하는 방식으로<br />
-                    탄소 배출을 줄이기 위한 노력을 기울이고 있습니다.<br />태양광과
-                    풍력 에너지를 도입하여 •••
+                    코카콜라는 에너지 효율성을 높이고, 재생 가능한<br
+                      class="text-space"
+                    />에너지를 사용하며, 저탄소 기술을 도입하는 방식으로<br
+                      class="text-space"
+                    />
+                    탄소 배출을 줄이기 위한 노력을 기울이고 있습니다.<br
+                      class="text-space"
+                    />태양광과 풍력 에너지를 도입하여 •••
                   </dd>
                 </dl>
                 <a href="#">프로젝트 알아보기</a>
@@ -320,7 +357,6 @@
           <video autoplay loop>
             <source src="/img/sub-slogan-video.mp4" type="video/mp4" />
           </video>
-          <div class="slogan-text">Real Magic</div>
         </div>
       </section>
     </main>
@@ -329,9 +365,11 @@
       <div class="inner">
         <div class="footer-content">
           <div class="top-con">
-            <figure>
-              <img src="./img/Coke-logo-red.svg" alt="Coca-Cola Logo" />
-            </figure>
+            <a href="index.html">
+              <figure>
+                <img src="./img/Coke-logo-red.svg" alt="Coca-Cola Logo" />
+              </figure>
+            </a>
           </div>
         </div>
         <div class="bottom-con">

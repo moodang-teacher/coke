@@ -1,14 +1,18 @@
-/* Header Styles */
 header {
+  padding: 2rem;
   background-color: #ff0000;
   /* padding: 1rem 0; */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.logo img {
-  max-height: 50px;
+.collapse {
+  display: flex;
 }
 
+.logo {
+  width: 25rem;
+  height: 4rem;
+}
 nav a {
   color: #fff;
   text-decoration: none;
@@ -56,22 +60,28 @@ nav a {
 
 .coca {
   position: absolute;
-  left: 17.1875%;
-  top: 15%;
+  /* left: 18.1875%; */
+  /* top: 15%; */
+  left: 29%;
+  top: 50%;
+  transform: translate(-29%, -50%);
 }
 
 .product-img {
   position: absolute;
   z-index: 10;
-  left: 38.5416%;
+  left: 50%;
+  transform: translateX(-50%);
   height: 123rem;
 }
 
 .cola {
   position: absolute;
-  right: 13.7083%;
-  top: 15%;
+  /* right: 18.7083%; */
+  right: 15%;
+  top: 50%;
   z-index: 10;
+  transform: translate(-15%, -50%);
 }
 
 #other {
@@ -104,9 +114,10 @@ nav a {
 
 .product-text {
   position: absolute;
-  left: 30%;
-  top: 18%;
+  left: 50%;
+  top: 50%;
   z-index: 10;
+  transform: translate(-50%, -50%);
 }
 
 .product-text h2 {
@@ -150,7 +161,7 @@ nav a {
 .other-brand {
   width: 50%;
   height: 35.3rem;
-  background: url(../img/brand-visual.jpeg) no-repeat center center;
+  background: url(../img/brand-visual.jpeg) no-repeat center center / cover;
   position: relative;
 }
 
@@ -205,9 +216,13 @@ nav a {
 
 .other-brand-text {
   position: absolute;
-  right: 30%;
-  top: 18%;
+  /* right: 30%;
+  top: 18%; */
   z-index: 10;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
 }
 
 /* 다른 브랜드 소개 끝 */
@@ -216,17 +231,19 @@ nav a {
 
 #campaigns {
   margin-top: 36rem;
+  overflow: hidden;
+  /* height: 40rem; */
 }
 
 .camp-wrap {
-  height: 44rem;
+  height: 43.5rem;
   /* border: 1px solid black; */
   position: relative;
 }
 
 .campaigns-text {
   /* background: #ff0; */
-  width: 57rem;
+  width: 100%;
   color: #000;
 }
 
@@ -261,7 +278,6 @@ nav a {
 
 .swiper {
   border-radius: 30px;
-  width: 119rem !important;
 }
 
 .swiper-con {
@@ -269,7 +285,7 @@ nav a {
   position: absolute;
   left: 57rem;
   top: 0;
-  width: 119rem;
+  /* width: 119rem; */
   height: 100%;
 
   padding-bottom: 5rem;
@@ -331,7 +347,7 @@ nav a {
 .swiper-pagination {
   bottom: 0 !important;
   top: auto !important;
-  left: -35rem !important;
+  left: -80rem !important;
 }
 
 .swiper-pagination-bullet {
@@ -414,8 +430,8 @@ nav a {
 
 .sustainability-img-list li figure {
   position: relative;
-  width: 52rem;
-  height: 50rem;
+  /* width: 52rem;
+  height: 50rem; */
   border-radius: 30px;
   overflow: hidden;
 }
@@ -558,9 +574,12 @@ nav a {
 }
 
 .history-timeline {
+  gap: 5rem;
   display: flex;
   justify-content: space-between;
   position: relative;
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 .history-timeline li {
@@ -602,7 +621,9 @@ nav a {
   border: 1px solid white;
   position: absolute;
   /* z-index: -1; */
-  top: 33%;
+  top: 35%;
+
+  transform: translateY(-35%);
 }
 
 /* 슬로건 시작 */
@@ -700,10 +721,14 @@ footer {
 
 .sns-wrap li {
   display: block;
-  border: 1px solid white;
-  border-radius: 100%;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.sns-wrap li a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .sns-wrap li:nth-child(1) {
@@ -719,13 +744,218 @@ footer {
   background: url(../img/facebook.svg) no-repeat center center;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1750px) {
+  .coca {
+    left: 24%;
+  }
+  .cola {
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .cola {
+    right: 5%;
+  }
+
+  .sustainability-text-con {
+    top: 65.5882%;
+  }
+
+  .sustainability-text-wrap dl dt {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .sustainability-text-wrap dl dd {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 1530px) {
+  .sustainability-img-list li:hover .sustainability-text-wrap {
+    bottom: 15%;
+  }
+}
+
+@media screen and (max-width: 1490px) {
+  .sustainability-img-list li:hover .sustainability-text-wrap {
+    bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 1410px) {
   .inner {
-    width: 95.703125%vw;
+    /* max-width: 71%; */
+  }
+
+  .coca {
+    left: 20%;
+  }
+
+  /* .product-img {
+    left: 35.6%;
+  } */
+
+  .cola {
+    right: 0%;
+  }
+
+  .container {
+    max-width: 85%; /* 1200px / 1410px ≈ 85% */
+  }
+
+  .main {
+    padding: 4% 2%; /* 4rem을 퍼센트로 대략적으로 변환 */
+  }
+
+  .title {
+    font-size: 2.5rem; /* rem 단위는 그대로 유지 */
+  }
+
+  .description {
+    font-size: 1.1rem; /* rem 단위는 그대로 유지 */
+  }
+
+  .campaigns-text p {
+    display: none;
+  }
+  .campaigns-text a {
+    display: none;
+  }
+
+  #campaigns {
+    height: 50rem;
+  }
+
+  .swiper-con {
+    position: static;
+    left: 0;
+    top: 10rem;
+    width: 100%;
+  }
+
+  .camp-wrap {
+    height: 40rem;
+  }
+
+  .swiper-pagination {
+    left: 0 !important;
+    bottom: -100px !important;
+  }
+  .sustainability-text p {
+    display: none;
+  }
+
+  .sustainability-img-list {
+    flex-direction: column;
+  }
+
+  .sustainability-img-list li {
+    margin-bottom: 3rem;
+  }
+
+  .sustainability-img-list li figure {
+    width: 100%;
+  }
+
+  .sustainability-text-con {
+    left: 7.2485%;
+    top: 75.1025%;
+  }
+
+  .sustainability-text-con dl dt {
+    font-size: 5rem;
+  }
+
+  .sustainability-text-con dl dd {
+    font-size: 3.4rem;
+  }
+
+  .sustainability-text-wrap dl dt {
+    font-size: 6rem;
+    margin-bottom: 5rem;
+  }
+
+  .sustainability-text-wrap dl dd {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+  }
+
+  .text-space {
+    display: none;
+  }
+
+  .sustainability-text-wrap a {
+    font-size: 5rem;
+    width: 50rem;
+    height: 10rem;
+  }
+
+  .sustainability-img-list li:hover .sustainability-text-wrap {
+    bottom: 20%;
+  }
+
+  .history-timeline {
+    width: 100%;
+    overflow: scroll;
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 10rem;
+  }
+
+  .history-timeline li figure img {
+    width: 50rem;
+    height: 50rem;
+  }
+
+  .history-timeline dl dt strong {
+    font-size: 5rem;
+  }
+
+  .history-timeline dl dt {
+    font-size: 4rem;
+  }
+
+  .history-timeline dl dd {
+    font-size: 3.6rem;
+  }
+
+  .history-timeline::after {
+    width: 200%;
+  }
+
+  /* 그리드 레이아웃 조정 */
+  .grid {
+    gap: 2%;
+  }
+
+  .card {
+    padding: 2%; /* 1.25rem을 퍼센트로 대략적으로 변환 */
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .coca {
+    left: 16%;
+  }
+  .cola {
+    right: -5%;
+  }
+
+  .history-timeline::after {
+    width: 300%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .inner {
+    /* width: 95.703125%; */
   }
 
   :root {
-    font-size: 58%;
+    /* font-size: 58%; */
   }
 
   .gnb-wrap {
@@ -741,6 +971,14 @@ footer {
     margin-left: auto;
   }
 
+  .collapse:not(.show) {
+    display: flex !important;
+  }
+
+  .navbar-collapse {
+    flex-basis: inherit;
+  }
+
   .visual {
     height: 32rem;
   }
@@ -754,13 +992,13 @@ footer {
   .product-img {
     width: 23.4rem;
     height: 65.5rem;
-    left: 43%;
+    /* left: 43%; */
   }
 
   .cola {
     width: 38rem;
     height: 23.4rem;
-    right: 16.3%;
+    right: 5.3%;
   }
 
   .product {
@@ -772,16 +1010,16 @@ footer {
   }
 
   .product-text {
-    top: 15%;
+    text-align: center;
   }
 
   .product-text h2 {
     font-size: 3rem;
   }
 
-  .other-brand-text {
+  /* .other-brand-text {
     top: 15%;
-  }
+  } */
 
   .other-brand-text h2 {
     font-size: 3rem;
@@ -802,9 +1040,19 @@ footer {
     display: none;
   }
 
+  #campaigns {
+    height: 70rem;
+  }
+
+  .camp-wrap {
+    height: 50rem;
+  }
+
   .swiper-con {
+    position: static;
     left: 0;
     top: 10rem;
+    width: 100%;
   }
 
   .swiper-pagination {
@@ -829,7 +1077,7 @@ footer {
 
   .sustainability-text-con {
     left: 7.2485%;
-    top: 60.1025%;
+    top: 70.1025%;
   }
 
   .sustainability-text-con dl dt {
@@ -837,7 +1085,7 @@ footer {
   }
 
   .sustainability-text-con dl dd {
-    font-size: 2.4rem;
+    font-size: 3rem;
   }
 
   .sustainability-text-wrap dl dt {
@@ -846,6 +1094,12 @@ footer {
 
   .sustainability-text-wrap dl dd {
     font-size: 2rem;
+  }
+
+  .sustainability-text-wrap a {
+    font-size: 2.4rem;
+    width: 30rem;
+    height: 6rem;
   }
 
   .sustainability-img-list li:hover .sustainability-text-wrap {
@@ -869,14 +1123,327 @@ footer {
   }
 }
 
+@media screen and (max-width: 900px) {
+  footer {
+    padding: 2.4rem 0;
+    height: 20rem;
+  }
+
+  .footer-content {
+    margin: 0 auto;
+    width: fit-content;
+    width: 20rem;
+  }
+
+  .top-con figure img {
+    width: 12.5em;
+    height: 2rem;
+    object-fit: contain;
+  }
+
+  .top-con {
+    margin-bottom: 2rem;
+  }
+
+  .sns-wrap {
+    margin-bottom: 2rem;
+  }
+
+  .bottom-con {
+    width: fit-content;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-con {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .con-list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .coca {
+    width: 24rem;
+    height: 15.2rem;
+    object-fit: cover;
+    left: 20%;
+  }
+
+  .product-img {
+    width: 21.2rem !important;
+    width: 59.5rem;
+    object-fit: cover;
+    /* left: 27%; */
+  }
+
+  .cola {
+    width: 24.8rem;
+    height: 15.3rem;
+    object-fit: cover;
+    right: 3%;
+  }
+
+  #hero {
+    height: 50rem;
+    background: #f00;
+  }
+
+  #other {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product {
+    width: 100%;
+    display: block;
+    height: 30rem;
+    z-index: 10;
+    text-align: center;
+  }
+
+  .product-text h2 {
+    font-size: 5rem;
+  }
+
+  .product-text a {
+    font-size: 4rem;
+    width: 30rem;
+  }
+
+  .other-brand {
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 30rem;
+  }
+
+  .other-brand-text h2 {
+    font-size: 5rem;
+  }
+
+  .other-brand-text a {
+    font-size: 4rem;
+    width: 30rem;
+  }
+
+  .sustainability-text-con dl dt {
+    font-size: 3rem;
+  }
+
+  .sustainability-text-con dl dd {
+    font-size: 2.4rem;
+  }
+
+  .sustainability-text-wrap dl dt {
+    font-size: 3rem;
+  }
+
+  .history-timeline dl dd {
+    font-size: 3rem;
+  }
+
+  .history-timeline::after {
+    width: 350%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sustainability-text-wrap dl dt {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .sustainability-text-wrap dl dd {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+
+  .history-timeline li figure img {
+    width: 40rem;
+    height: 40rem;
+  }
+
+  .history-timeline::after {
+    top: 32%;
+    width: 380%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .sustainability-text-con {
+    left: 10.2485%;
+    top: 60.1025%;
+  }
+  .sustainability-text-con dl dt {
+    font-size: 2.4rem;
+  }
+
+  .sustainability-text-con dl dd {
+    font-size: 1.8rem;
+  }
+
+  .sustainability-text-wrap a {
+    font-size: 1.8rem;
+    width: 20rem;
+    height: 4rem;
+  }
+
+  .sustainability-img-list li:hover .sustainability-text-wrap {
+    bottom: 20%;
+  }
+
+  .sustainability-text-wrap dl dt {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .sustainability-text-wrap dl dd {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+
+  .history-timeline li figure img {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .history-timeline::after {
+    width: 440%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .coca {
+    left: 15%;
+  }
+
+  .cola {
+    right: 0;
+  }
+
+  .history-timeline::after {
+    width: 480%;
+  }
+}
+
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media screen and (max-width: 440px) {
+  .inner {
+    width: 90.909%;
+  }
+
+  .collapse:not(.show) {
+    display: flex;
+  }
+
+  .visual {
+    height: 49rem;
+  }
+
   .hero-text h1 {
     font-size: 3rem;
   }
 
   .hero-text p {
     font-size: 1.2rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .coca {
+    width: 24rem;
+    height: 15.2rem;
+    object-fit: cover;
+    left: 11%;
+  }
+
+  /* .product-img {
+    width: 21.2rem !important;
+    width: 59.5rem;
+    object-fit: cover;
+    left: 27%; */
+
+  .cola {
+    width: 24.8rem;
+    height: 15.3rem;
+    object-fit: cover;
+    right: -7%;
+  }
+
+  /* #other {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product {
+    width: 100%;
+    display: block;
+    z-index: 10;
+    text-align: center;
+  }
+
+  .other-brand {
+    width: 100%;
+    display: block;
+    text-align: center;
+  } */
+
+  #campaigns {
+    margin-top: 14rem;
+  }
+
+  .campaigns-text {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .sustainability-img-list li {
+    margin-bottom: 0;
+  }
+
+  .sustainability-text-con {
+    top: 65%;
+  }
+
+  .sustainability-text h4 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .sustainability-text-con dl dt {
+    font-size: 2.4rem;
+  }
+
+  .sustainability-text-con dl dd {
+    font-size: 1.4rem;
+  }
+
+  .sustainability-img-list li:hover .sustainability-text-wrap {
+    bottom: 10%;
+  }
+
+  .sustainability-text-wrap dl dt {
+    font-size: 2.4rem;
+  }
+
+  .sustainability-text-wrap dl dd {
+    font-size: 1.4rem;
+  }
+
+  .sustainability-text-wrap a {
+    font-size: 1.8rem;
+  }
+
+  #history h2 {
+    text-align: center;
+    font-size: 4rem;
   }
 
   .timeline::after {
@@ -898,7 +1465,48 @@ footer {
     left: 15px;
   }
 
+  .history-timeline::after {
+    width: 500%;
+  }
+
+  .history-timeline dl dt strong {
+    font-size: 2.4rem;
+  }
+
+  .history-timeline dl dt {
+    font-size: 2.2rem;
+  }
+
+  .history-timeline dl dd {
+    font-size: 1.8rem;
+  }
+
+  .slogan-text {
+    font-size: 6rem;
+  }
+
   .right {
     left: 0%;
+  }
+
+  .top-con {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bottom-con {
+    justify-content: center;
+  }
+
+  .sns-wrap {
+    justify-content: center;
+  }
+
+  .con-list {
+    display: none;
+  }
+
+  .left-con p {
+    font-size: 1rem;
   }
 }
